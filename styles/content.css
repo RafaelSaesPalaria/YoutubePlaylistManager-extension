@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.youtube_manager_button {
+    padding: 10px 7px;
+    background-color: rgb(48,48,48);
+    color: white;
+    border: 1px solid white;
+    border-radius: 15px;
+    cursor: pointer;
+    user-select: none;
+}
