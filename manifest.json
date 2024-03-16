@@ -2,10 +2,10 @@
     "manifest_version":3,
     "name":"YoutubePlaylistManager",
     "description":"A playlist manager for youtube",
-    "version":"0.0.1",
+    "version":"0.0.2",
     "action": {
         "default_title":"Playlist Manager",
-        "default_popup":"",
+        "default_popup":"/pages/popup.html",
         "default_icons":{
             "128":"/resources/icons/128.png",
             "48":"/resources/icons/48.png",
@@ -17,5 +17,12 @@
         "48":"/resources/icons/48.png",
         "16":"/resources/icons/16.png"
     },
+    "content_scripts":[
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["/scripts/content.js"],
+            "run_at": "document_idle"
+        }
+    ],
     "permissions":["activeTab"]
 }
