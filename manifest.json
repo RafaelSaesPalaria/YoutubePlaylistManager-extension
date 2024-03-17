@@ -25,5 +25,10 @@
             "run_at": "document_idle"
         }
     ],
+    "background":{
+        "service_worker":"scripts/pageEvent.js",
+        "type":"module",
+        "persistant":true
+    },
     "permissions":["activeTab"]
 }
